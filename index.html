@@ -7,7 +7,7 @@
 </head>
 <body class="">
 <div class="md:flex flex-col md:flex-row md:min-h-screen w-full fixed">
-  <div class="flex flex-col w-full md:w-64 text-gray-700 bg-gray-200 dark-mode:text-gray-200 dark-mode:bg-gray-800 flex-shrink-0">
+  <div class="flex flex-col w-full md:w-64 text-gray-700 bg-gray-200 dark dark-mode:text-gray-200 dark-mode:bg-gray-800 flex-shrink-0">
 <img class="w-32 h-32 rounded-full mx-auto" src="moi.jpeg">
     <div class="flex-shrink-0 px-8 py-4 flex flex-row items-center justify-between">
       <a href="#" class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline mx-auto">Steeve GUILLOT</a>
@@ -19,27 +19,32 @@
       <a class="block px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#experience">Résumé</a>
       <a class="block px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#projet">Projets</a>
       <a class="block px-4 py-2 mt-2 text-sm font-semibold text-gray-900 bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#contact">Contact</a>
+			
 	</div>
+	
     </nav>
   </div>
 </div>
-<div id="home" class="h-screen bod">
-
+<div id="home" class="flex h-screen justify-end py-2 pr-2">
+<button title="Toggle Theme" onclick="theme()"class="w-12 h-6 rounded-full p-1 bg-gray-400 dark:bg-gray-600 relative transition-colors duration-500 ease-infocus:outline-none focus:ring-2 focus:ring-blue-700 dark:focus:ring-blue-600 focus:border-transparent">
+  <div id="toggle" class="rounded-full w-4 h-4 bg-blue-600 dark:bg-blue-500 relative ml-0 dark:ml-6 pointer-events-none transition-all duration-300 ease-out">
+  </div>
+</button>
 </div>
 
 
 <!-- A propos de moi -->
 <div id="about" class="">
-	<h1 class=" mx-96 text-3xl pt-16 font-black text-blue-800">A propos de moi</h1>
+	<h1 class=" mx-96 text-3xl pt-16 font-black text-blue-800 md:w-96">A propos de moi</h1>
 	<div class="mx-96">
-		<ul class="py-5 mx-5">
-			<li class="py-1"><span class="font-bold ">Nom :</span> Steeve GUILLOT</li>
-			<li class="py-1"><span class="font-bold">Age :</span> 20 ans</li>
-			<li class="py-1"><span class="font-bold">Date de naissance :</span> 2 octobre 2001 à ISSOIRE</li>
-			<li class="py-1"><span class="font-bold">Ville :</span> Pesmes, France</li>
-			<li class="py-1"><span class="font-bold">Etude :</span> Première année de Licence ASI (Administrateur de Systèmes d'Information)</li>
-			<li class="py-1"><span class="font-bold">Adresse Mail :</span> steeveguillot@orange.fr</li>
-			<li class="py-1"><span class="font-bold">Téléphone :</span> 06 12 89 53 39</li>
+		<ul class="py-5 mx-5 dark:text-white">
+			<li class="py-1 md:w-96"><span class="font-bold ">Nom :</span> Steeve GUILLOT</li>
+			<li class="py-1 md:w-96"><span class="font-bold">Age :</span> 20 ans</li>
+			<li class="py-1 md:w-96"><span class="font-bold">Date de naissance :</span> 2 octobre 2001 à ISSOIRE</li>
+			<li class="py-1 md:w-96"><span class="font-bold">Ville :</span> Pesmes, France</li>
+			<li class="py-1 md:w-96"><span class="font-bold">Etude :</span> Première année de Licence ASI (Administrateur de Systèmes d'Information)</li>
+			<li class="py-1 md:w-96"><span class="font-bold">Adresse Mail :</span> steeveguillot@orange.fr</li>
+			<li class="py-1 md:w-96"><span class="font-bold">Téléphone :</span> 06 12 89 53 39</li>
 		</ul>
 	</div>
 </div>
@@ -338,18 +343,41 @@
 </div>
 <section class="text-gray-600 body-font relative">
 <div class="absolute inset-0 bg-gray-300">
-  <iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="no" src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=%C4%B0zmir+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed" style=""></iframe>
+	<iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="no"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2706.767852279831!2d5.560624415863476!3d47.27979241848914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478d55b3d77110db%3A0x5c6ee9ddca72fefe!2s2%20Rue%20Saint-Hilaire%2C%2070140%20Pesmes!5e0!3m2!1sen!2sfr!4v1634565670034!5m2!1sen!2sfr"></iframe>
 </div>
 <div class="container px-5 py-80 mx-auto flex">
  
    
 </div>
 </section>
-
 </div>
 </div>
 
 </div>
+<script>
+function theme(event) {
+		console.log('theme')
+	 document.documentElement.classList.toggle('dark')
+ }
+</script>
 
+<!-- imitate dark mode styles enabled -->
+<style>
+html.dark {
+		--tw-bg-opacity: 1;
+		background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
+		color : white;
+}
+html.dark .dark\:ml-6 {
+			margin-left: 1.5rem;
+ }
+
+html.dark .dark\:bg-blue-500 {
+			--tw-bg-opacity: 1;
+		 background-color: rgba(59, 130, 246, var(--tw-bg-opacity));
+ }
+</style>
 </body>
+
+
 </html>
