@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Steeve Guillot — Développeur Full Stack junior</title>
+    <meta
+      name="description"
+      content="Steeve Guillot, développeur full stack junior (bac+5) en Franche-Comté. Il cherche un premier poste pour apprendre auprès d'une équipe et évoluer vers le back-end."
+    />
+    <meta name="author" content="Steeve Guillot" />
+    <meta name="theme-color" content="#0a0813" />
+    <meta property="og:title" content="Steeve Guillot — Développeur Full Stack junior" />
+    <meta
+      property="og:description"
+      content="Steeve Guillot, développeur full stack junior (bac+5) en Franche-Comté. Il cherche un premier poste pour apprendre auprès d'une équipe et évoluer vers le back-end."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script>
+      ;(function () {
+        try {
+          var stored = localStorage.getItem('theme')
+          var dark = stored
+            ? stored === 'dark'
+            : window.matchMedia('(prefers-color-scheme: dark)').matches
+          var root = document.documentElement
+          root.classList.toggle('dark', dark)
+          root.style.colorScheme = dark ? 'dark' : 'light'
+          var meta = document.querySelector('meta[name="theme-color"]')
+          if (meta) meta.setAttribute('content', dark ? '#0a0813' : '#faf8ff')
+        } catch (error) {
+          /* Le thème clair reste affiché si le stockage est indisponible. */
+        }
+      })()
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Steeve Guillot",
+        "jobTitle": "Développeur Full Stack junior",
+        "email": "mailto:steeveguillot@orange.fr",
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "Franche-Comté",
+          "addressCountry": "FR"
+        },
+        "sameAs": [
+          "https://github.com/SteeveGllt",
+          "https://www.linkedin.com/in/steeve-guillot-945835230"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
